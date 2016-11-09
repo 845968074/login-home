@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chart</title>
+</head>
+<body>
+<form id="messageForm">
+    <input required type="text" id="visitor_name" placeholder="Name"/>
+    <input required type="email" id="visitor_email" placeholder="Email"/>
+    <input type="text" id="visitor_website" placeholder="Website"/>
+    <textarea required id="visitor_msg" placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
+    <label><input type="checkbox" id="msg_private" value="false">
+        Private Message</label><br/>
+    <center>
+        <input id='submitBtn' type="submit" value="Submit Message"/>
+    </center>
+    <br/> <span id='msg_result'></span>
+    <div>
+        <hr>
+    </div>
+    <div id="historyComment"></div>
+    <textarea placeholder="Message"></textarea>
+    <input type="information"/>
+    <button>fa song</button>
+</form>
+</body>
+</html>
