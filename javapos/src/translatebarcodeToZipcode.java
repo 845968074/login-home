@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+
 public class translatebarcodeToZipcode {
     String id = "0123456789";
     String[] bar = {"||:::", ":::||", "::||:", "::||:", ":|::|", ":|:|:", ":||::", "|:::|", "|::|:", "|:|::"};
