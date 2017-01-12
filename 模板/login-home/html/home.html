@@ -1,124 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
-    <link href="../css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-    <link href="../css/home.css" type="text/css" rel="stylesheet" media="all">
-    <link href="../css/component.css" rel="stylesheet" type="text/css"  />
-    <!-- Custom Theme files -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Scootio Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola Welcome" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!--web-fonts-->
-    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
-    <!--js-->
-    <script src="../js/jquery-1.11.1.min.js"></script>
-    <script src="../js/modernizr.custom.js"></script>
-    <link href="../css/swipebox.css" rel='stylesheet' type='text/css' />
-    <!--//js-->
-    <script type="text/javascript" src="../js/move-top.js"></script>
-    <script type="text/javascript" src="../js/easing.js"></script>
-    <!--/script-->
-    <script type="text/javascript">
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event){
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+    <meta charset="UTF-8">
+    <title>小藍科技</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="../bootstrap-3.3.5-dist/js/jquery-1.11.1.min.js"></script>
+    <script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myNav").affix({
+                offset: {
+                    top: 125
+                }
             });
         });
     </script>
-    <script src="../js/jquery.swipebox.min.js"></script>
-    <script type="text/javascript">
-        jQuery(function($) {
-            $(".work-grid-middle a").swipebox();
-        });
-    </script>
-
-
 </head>
-<!--start-home-->
-<body class="cbp-spmenu-push">
-<!--top-header-->
-<!--bottom-->
-<section class="button">
-    <button id="showLeftPush"><img src="../images/menu-icon.png" alt=""></button>
-</section>
-<script src="../js/classie.js"></script>
-<script src="../js/uisearch.js"></script>
-
-<!--//search-scripts-->
-
-<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-    <h3>Menu</h3>
-    <a class="active scroll" href="#house">Home</a>
-    <a class="scroll" href="#about">远程控制还车</a>
-    <a class="scroll" href="#service">设置电子围栏</a>
-    <a class="scroll" href="#team">设置应费用</a>
-    <a class="scroll" href="#news">数据汇总</a>
-    <a class="scroll" href="#demo">设置维修账号</a>
-    <a class="scroll" href="#test">设置配员工账号</a>
-    <a class="scroll" href="#gallery">添加车辆</a>
-    <a class="scroll" href="#contact">意外还车</a>
-    <a class="scroll" href="#contact">充值记录</a>
-    <ul class=" side-icons">
-        <li><a class="fb" href="#"></a></li>
-        <li><a class="twitt" href="#"></a></li>
-        <li><a class="goog" href="#"></a></li>
-        <li><a class="drib" href="#"></a></li>
-    </ul>
-</nav>
-<div class="banner" id="house">
-    <div class="container">
-        <div class="callbacks_container">
-            <ul class="rslides callbacks callbacks1" id="slider4">
-                <li class="callbacks1_on" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out;">
-                    <div class="banner-info">
-                        <h3>The New Vespa Trade it</h3>
-                    </div>
-                </li>
-                <li class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;">
-                    <div class="banner-info">
-                        <h3>The New Scootio</h3>
-                    </div>
-                </li>
-                <li class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;">
-                    <div class="banner-info">
-                        <h3>The New Vespa Trade it</h3>
-                    </div>
-                </li>
-                <li class="callbacks1_on" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out;">
-                    <div class="banner-info">
-                        <h3>The New Scootio</h3>
-                    </div>
-                </li>
+<body data-spy="scroll" data-target="#myScrollspy">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" id="myNav">
+                <li class="active"><a href="home.html">用户审核</a></li>
+                <li><a href="power.html"> 设置权限</a></li>
+                <li><a href="cost.html">设置費用</a></li>
+                <li><a href="map.html">设置电子围栏</a></li>
+                <li><a href="data.html">数据汇总</a></li>
+                <li><a href="control_car.html">远程控制还车</a></li>
+                <li><a href="recharge_record.html">充值记录</a></li>
+                <li><a href="accidentt_car.html">意外还车</a></li>
             </ul>
         </div>
-        <!--banner-Slider-->
-        <script src="../js/responsiveslides.min.js"></script>
-        <script>
-            // You can also use "$(window).load(function() {"
-            $(function () {
-                // Slideshow 4
-                $("#slider4").responsiveSlides({
-                    auto: true,
-                    pager: true,
-                    nav:false,
-                    speed: 500,
-                    namespace: "callbacks",
-                    before: function () {
-                        $('.events').append("<li>before event fired.</li>");
-                    },
-                    after: function () {
-                        $('.events').append("<li>after event fired.</li>");
-                    }
-                });
-
-            });
-        </script>
+        <div class="col-xs-9">
+            <div>
+                <form class=" form-container">
+                    <input type="text" placeholder="姓名 电话" class="search-input"/>
+                    <input class="search-button" type="image" src="../images/search-button.png"/>
+                </form>
+            </div>
+            <div class="list">
+                <h2 id="section-1">用户审核</h2>
+                <div class="table-responsive">
+                    <table class="table  table-bordered">
+                        <thead>
+                        <tr>
+                            <th>姓名</th>
+                            <th>电话</th>
+                            <th>密码</th>
+                            <th>押金（元）</th>
+                            <th>权限</th>
+                            <th>狀態</th>
+                            <th>身份照片</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="info">
+                            <td>小花</td>
+                            <td>15809287557</td>
+                            <td>123456</td>
+                            <td>****</td>
+                            <td>用戶</td>
+                            <td>已經注冊</td>
+                            <td>無</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>小花</td>
+                            <td>15809287557</td>
+                            <td>123456</td>
+                            <td>500</td>
+                            <td>用戶</td>
+                            <td>未审核</td>
+                            <td><a href="photo.html">有</a></td>
+                        </tr>
+                        <tr class="success">
+                            <td>小花</td>
+                            <td>15809287557</td>
+                            <td>123456</td>
+                            <td>1000</td>
+                            <td>用戶</td>
+                            <td>审核通過</td>
+                            <td><a>有</a></td>
+                        </tr>
+                        <tr class="danger">
+                            <td>小花</td>
+                            <td>15809287557</td>
+                            <td>123456</td>
+                            <td>100</td>
+                            <td>用戶</td>
+                            <td>审核沒有通過</td>
+                            <td><a>有</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<script type="text/javascript" src="../js/home.js"></script>
+
+
 </body>
 </html>

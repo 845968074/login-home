@@ -9,23 +9,28 @@
     <meta name="keywords"
           content="App Loction Form,Login Forms,Sign up Forms,Registration Forms,News latter Forms,Elements" ./>
     <script type="application/x-javascript" src="../js/login.js"></script>
+    <script src="../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script type="application/javascript" src="../js/login.js"></script>
 </head>
 <body>
 <div class="app-location">
     <h2>Welcome to Us</h2>
     <div class="location"><img src="../images/location.png" class="img-responsive" alt=""/></div>
-    <form>
+    <form action="home.html" method="post" onsubmit="return validate_form()">
         <div>
-            <img src="../images/people.png" width="50px">
-            <input type="text" class="text" value="userID" onfocus="this.value = '';"
-                   onblur="if (this.value == '') {this.value = 'userID';}">
+            <img src="../images/people.png" width="50px"/>
+            <input type="text" class="text" value="user phone" onfocus="this.value = '';"
+                   onblur="if (this.value == '') {this.value = 'userID';}" id="user_phone">
         </div>
         <div>
-            <img src="../images/lock.png" width="50px">
+            <img src="../images/lock.png" width="50px"/>
             <input type="password" value="Password" onfocus="this.value = '';"
-                   onblur="if (this.value == '') {this.value = 'Password';}">
+                   onblur="if (this.value == '') {this.value = 'Password';}" id="password">
         </div>
-        <div class="submit"><a class="btn btn-success" href="home.html" role="button">Sign in</a></div>
+        <div class="submit">
+            <button class="btn btn-success" role="button" id="button1" > Sign in
+            </button>
+        </div>
     </form>
 </div>
 </body>
